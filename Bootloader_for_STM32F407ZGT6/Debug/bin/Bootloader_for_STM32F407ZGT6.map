@@ -1,0 +1,202 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/gnu tools arm embedded/7 2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg.a(lib_a-memcpy.o)
+                              ..\obj\aes.o (symbol from plugin) (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+msTick              0x4               ..\obj\delay.o (symbol from plugin)
+readBuffer          0x200             ..\obj\main.o (symbol from plugin)
+Jump_To_Application
+                    0x4               ..\obj\main.o (symbol from plugin)
+ctx                 0xc0              ..\obj\main.o (symbol from plugin)
+FATFS_Obj           0x238             ..\obj\main.o (symbol from plugin)
+result              0x1               ..\obj\main.o (symbol from plugin)
+firmware            0x224             ..\obj\main.o (symbol from plugin)
+csd                 0x10              ..\obj\spi_sd.o (symbol from plugin)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/7 2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/7 2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg.a(lib_a-memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x08008000         xr
+ram              0x20000000         0x00020000         xrw
+ram1             0x10000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x20020000                _eram = 0x20020000
+
+.text           0x08000000     0x287e
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+                0x08000000                g_pfnVectors
+ *(.text*)
+ .text          0x08000188      0x9ec C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+                0x08000ae8                abort
+                0x08000aea                _write
+                0x08000aee                _read
+                0x08000af2                _lseek
+                0x08000af6                _isatty
+                0x08000afa                _fstat
+                0x08000b04                _close
+                0x08000b0a                link
+                0x08000b10                _sbrk
+                0x08000b34                Reset_Handler
+ .text.unlikely
+                0x08000b74      0xd78 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+ .text.startup  0x080018ec      0x6d8 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+                0x080018ec                main
+ .text          0x08001fc4      0x134 c:/program files (x86)/gnu tools arm embedded/7 2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg.a(lib_a-memcpy.o)
+                0x08001fc4                memcpy
+ *(.init)
+ *(.fini)
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata        0x080020f8      0x769 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+ .rodata.str1.1
+                0x08002861       0x1d C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+ *(.eh_fram e*)
+
+.glue_7         0x08002880        0x0
+ .glue_7        0x08002880        0x0 linker stubs
+
+.glue_7t        0x08002880        0x0
+ .glue_7t       0x08002880        0x0 linker stubs
+
+.vfp11_veneer   0x08002880        0x0
+ .vfp11_veneer  0x08002880        0x0 linker stubs
+
+.v4_bx          0x08002880        0x0
+ .v4_bx         0x08002880        0x0 linker stubs
+
+.iplt           0x08002880        0x0
+ .iplt          0x08002880        0x0 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.rel.dyn        0x08002880        0x0
+ .rel.iplt      0x08002880        0x0 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x08002880                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x08002880                __exidx_end = .
+                0x08002880                __etext = .
+                0x0800287e                _sidata = __etext
+
+.data           0x20000000       0x24 load address 0x0800287e
+                0x20000000                __data_start__ = .
+                0x20000000                _sdata = __data_start__
+ *(vtable)
+ *(.data*)
+ .data          0x20000000       0x21 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+                0x20000024                . = ALIGN (0x4)
+ *fill*         0x20000021        0x3 
+                [!provide]                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                PROVIDE (__preinit_array_end, .)
+                0x20000024                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__init_array_start, .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                [!provide]                PROVIDE (__init_array_end, .)
+                0x20000024                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__fini_array_start, .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+                [!provide]                PROVIDE (__fini_array_end, .)
+ *(.jcr*)
+                0x20000024                . = ALIGN (0x4)
+                0x20000024                __data_end__ = .
+                0x20000024                _edata = __data_end__
+
+.igot.plt       0x20000024        0x0 load address 0x080028a4
+ .igot.plt      0x20000024        0x0 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.bss            0x20000024      0x774 load address 0x080028a4
+                0x20000024                . = ALIGN (0x4)
+                0x20000024                __bss_start__ = .
+                0x20000024                _sbss = __bss_start__
+ *(.bss*)
+ .bss           0x20000024      0x774 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+ *(COMMON)
+                0x20000798                . = ALIGN (0x4)
+                0x20000798                __bss_end__ = .
+                0x20000798                _ebss = __bss_end__
+
+.heap           0x20000798        0x0
+                0x20000798                __end__ = .
+                0x20000798                _end = __end__
+                0x20000798                end = __end__
+ *(.heap*)
+                0x20000798                __HeapLimit = .
+
+.co_stack       0x20000798      0x800 load address 0x08003018
+                0x20000798                . = ALIGN (0x8)
+ *(.co_stack .co_stack.*)
+ .co_stack      0x20000798      0x800 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+                0x20020000                __StackTop = (ORIGIN (ram) + LENGTH (ram))
+                0x2001f800                __StackLimit = (__StackTop - SIZEOF (.co_stack))
+                [!provide]                PROVIDE (__stack, __StackTop)
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region ram  overflowed with stack)
+LOAD C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+START GROUP
+LOAD c:/program files (x86)/gnu tools arm embedded/7 2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a
+LOAD c:/program files (x86)/gnu tools arm embedded/7 2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg.a
+LOAD c:/program files (x86)/gnu tools arm embedded/7 2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a
+END GROUP
+OUTPUT(Bootloader_for_STM32F407ZGT6.elf elf32-littlearm)
+
+.debug_info     0x00000000     0x557d
+ .debug_info    0x00000000     0x557d C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.debug_abbrev   0x00000000      0x62a
+ .debug_abbrev  0x00000000      0x62a C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.debug_loc      0x00000000     0x3ba2
+ .debug_loc     0x00000000     0x3ba2 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.debug_aranges  0x00000000       0xa0
+ .debug_aranges
+                0x00000000       0xa0 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.debug_ranges   0x00000000      0x778
+ .debug_ranges  0x00000000      0x778 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.debug_line     0x00000000      0xea7
+ .debug_line    0x00000000      0xea7 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+
+.debug_str      0x00000000     0x1304
+ .debug_str     0x00000000     0x1304 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+                               0x1436 (size before relaxing)
+
+.comment        0x00000000       0x7e
+ .comment       0x00000000       0x7e C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+                                 0x7f (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
+ .ARM.attributes
+                0x00000031       0x1c c:/program files (x86)/gnu tools arm embedded/7 2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg.a(lib_a-memcpy.o)
+
+.debug_frame    0x00000000      0x564
+ .debug_frame   0x00000000      0x564 C:\Users\mmorozov\AppData\Local\Temp\ccnytMSw.ltrans0.ltrans.o
